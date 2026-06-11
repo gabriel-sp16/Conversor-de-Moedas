@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #04050f;
+    /* Fundo escuro do app */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 60px;
+}
+
+.container {
+    background-color: #141534;
+    color: #b2b8d0;
+    padding: 56px 64px;
+    border-radius: 24px;
+    width: 480px;
+}
+
+/* Classe injetada pelo JS para ajustar os cantos inferiores ao exibir o resultado */
+.container.style-container {
+    border-radius: 24px 24px 0 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-input input,
+.user-input select {
+    background-color: #0e0f25;
+    color: #b2b8d0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 1px solid #2e3056;
+    outline: none;
+    width: 100%;
+}
+
+/* Remove as setas padrões do input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#btn-converter {
+    background-color: #e85b81;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 48px;
+}
+
+#btn-converter:hover {
+    background-color: #c74a6d;
+}
+
+/* Caixa de Resultado */
+.resultado {
+    background-color: #1c1d42;
+    width: 480px;
+    padding: 40px;
+    border-radius: 0 0 24px 24px;
+    text-align: center;
+}
+
+.resultado p:first-child {
+    color: #7d849e;
+    margin-bottom: 8px;
+}
+
+.resultado p:last-child {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
